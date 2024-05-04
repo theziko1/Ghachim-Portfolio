@@ -9,34 +9,34 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "React Dashboard",
+    desc: "A web application dedicated to a dashboard can be extremely useful in many contexts, whether to track business data, financial analysis, health statistics, or even personal data like fitness goals",
+    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714747167/s9lrfeg7x5ttjpertgo7.jpg",
+    link: "https://react-dashbord-frontend.onrender.com/",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "ChatSphere App",
+    desc: "This application aims to provide a real-time communication platform allowing users to connect to various chat rooms and share messages instantly.",
+    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714746708/qeuyrnbeazfrjmjbvsui.png",
+    link: "https://chat-sphere-web.vercel.app/",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Dev Recruit App",
+    desc: "DevRecruit is committed to identifying the best developers to join its team. For this, the company seeks to implement a precise and committed technical evaluation to assess the skills of future employees in the field of development.",
+    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714748756/a6a9ouqmjpzyrqlzbry8.png",
+    link: "https://dev-recruit.vercel.app/",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    title: "AuthFlow Pro App",
+    desc: "An Authentication Management Application based on Roles and Permissions in Monorepo with MVC Architecture, Redux, and Data Modeling",
+    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714750496/nnu4t86fwbv0vhc8grru.png",
+    link: "https://auth-flow-pro-client.vercel.app/",
   },
 ];
 
@@ -64,14 +64,14 @@ const Portfolio : React.FC = () => {
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen  flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className=" bg-violet-700/20  rounded-md flex flex-col gap-8 p-12 text-white">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[600px] xl:h-[420px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[600px] xl:h-[300px]">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
