@@ -32,5 +32,6 @@ export default function Home() {
         </div>
       </div>
       </motion.div>
+      
   );
 }
