@@ -40,9 +40,9 @@ const Contact : React.FC = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex gap-8 overflow-x-hidden flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="h-full w-full mt-8  flex items-center justify-center text-6xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -65,7 +65,7 @@ const Contact : React.FC = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-3/4 lg:h-min lg:w-1/2 mt-4 bg-red-50 rounded-xl text-xl flex flex-col gap-6 justify-center p-24"
+          className="w-3/4 h-screen mt-4 bg-red-50 rounded-xl text-xl flex flex-col gap-6 m-auto justify-center p-24"
         >
           <span>Dear Zakaria GHACHIM,</span>
           <textarea

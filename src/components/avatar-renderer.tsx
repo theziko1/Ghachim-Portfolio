@@ -15,7 +15,7 @@ const ModelRenderer = () => {
       <Suspense
         fallback={
           <div className="w-full flex items-center justify-center h-[calc(100vh-300px)] font-bold text-[30px] font-mono text-white">
-            loading...
+            
           </div>
         }
       >

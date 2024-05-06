@@ -71,24 +71,26 @@ const Portfolio : React.FC = () => {
                 className={`h-screen w-screen  flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className=" bg-violet-700/20  rounded-md flex flex-col gap-8 p-12 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                <div className=" bg-violet-700/20 w-3/4 h-[90%] rounded-md flex flex-col gap-4 p-12 text-white">
+                  <h1 className="text-xl font-bold md:text-2xl lg:text-xl xl:text-4xl">
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[600px] xl:h-[300px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image src={item.img} alt="" width={250} height={250} />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <div className='m-2'>
+                  <div className='flex items-center gap-4 lg:justify-between'>
+                    <div className='hidden lg:flex'>
                 {item.technologies.map((item) => (
-                  <span key={item} className="rounded m-2  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
-                ))}
-              </div>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                  <span key={item} className="rounded m-2 p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
+                ))}</div>
+                <Link href={item.link} >
+                    <button className="p-4 text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                   </Link>
+              </div>
+                  
                 </div>
               </div>
             ))}
@@ -96,7 +98,7 @@ const Portfolio : React.FC = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Do you have a project?</h1>
+        <h1 className="text-6xl mt-48">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
