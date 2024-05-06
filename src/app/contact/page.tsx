@@ -1,5 +1,5 @@
 "use client"
-import { MouseEvent, useRef, useState } from 'react'
+import React, { MouseEvent, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 

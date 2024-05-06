@@ -45,7 +45,7 @@ const About : React.FC = () => {
             <p className="text-lg">
             I am a dedicated full-stack developer with a passion for crafting exceptional digital experiences. With a background in my previous experiences, I bring a wealth of knowledge and expertise to every project.
             
-            From a young age, I've been fascinated by technology and its potential to transform lives. This fascination led me to pursue a career in web development, where I discovered a love for coding and problem-solving.
+            From a young age, I&apos;ve been fascinated by technology and its potential to transform lives. This fascination led me to pursue a career in web development, where I discovered a love for coding and problem-solving.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">

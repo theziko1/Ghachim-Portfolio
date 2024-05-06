@@ -83,7 +83,7 @@ const Portfolio : React.FC = () => {
                   </p>
                   <div className='m-2'>
                 {item.technologies.map((item) => (
-                  <span className="rounded m-2  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
+                  <span key={item} className="rounded m-2  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
                 ))}
               </div>
                   <Link href={item.link} className="flex justify-end">
