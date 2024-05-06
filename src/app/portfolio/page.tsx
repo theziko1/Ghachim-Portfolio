@@ -12,6 +12,7 @@ const items = [
     title: "React Dashboard",
     desc: "A web application dedicated to a dashboard can be extremely useful in many contexts, whether to track business data, financial analysis, health statistics, or even personal data like fitness goals",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714747167/s9lrfeg7x5ttjpertgo7.jpg",
+    technologies : ["MongoDB", "Express", "React", "NodeJS"],
     link: "https://react-dashbord-frontend.onrender.com/",
   },
   {
@@ -20,6 +21,7 @@ const items = [
     title: "ChatSphere App",
     desc: "This application aims to provide a real-time communication platform allowing users to connect to various chat rooms and share messages instantly.",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714746708/qeuyrnbeazfrjmjbvsui.png",
+    technologies : ["MongoDB", "Express", "React", "NodeJS" , "Socket.io","Typescript"],
     link: "https://chat-sphere-web.vercel.app/",
   },
   {
@@ -28,6 +30,7 @@ const items = [
     title: "Dev Recruit App",
     desc: "DevRecruit is committed to identifying the best developers to join its team. For this, the company seeks to implement a precise and committed technical evaluation to assess the skills of future employees in the field of development.",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714748756/a6a9ouqmjpzyrqlzbry8.png",
+    technologies : ["Json server", "React","Javascript","TailwindCSS"],
     link: "https://dev-recruit.vercel.app/",
   },
   {
@@ -36,6 +39,7 @@ const items = [
     title: "AuthFlow Pro App",
     desc: "An Authentication Management Application based on Roles and Permissions in Monorepo with MVC Architecture, Redux, and Data Modeling",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714750496/nnu4t86fwbv0vhc8grru.png",
+    technologies : ["MongoDB", "Express", "React", "NodeJS", "Typescript"],
     link: "https://auth-flow-pro-client.vercel.app/",
   },
 ];
@@ -77,6 +81,11 @@ const Portfolio : React.FC = () => {
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
+                  <div className='m-2'>
+                {item.technologies.map((item) => (
+                  <span className="rounded m-2  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
+                ))}
+              </div>
                   <Link href={item.link} className="flex justify-end">
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                   </Link>
