@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
           href="/"
           className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <Image src="/logo.png" alt="" width={150} height={150} />
+          <Image src="/logo.png" alt="logo" width={150} height={150} />
         </Link>
       </div>
       {/* SOCIAL */}
