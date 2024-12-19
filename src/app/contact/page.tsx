@@ -65,7 +65,7 @@ const Contact : React.FC = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="w-3/4 h-screen mt-4 bg-red-50 rounded-xl text-xl flex flex-col gap-6 m-auto justify-center p-24"
+          className="w-full md:w-3/4 h-screen mt-4 bg-red-50 rounded-xl text-xl flex flex-col gap-6 m-auto justify-center p-24"
         >
           <span>Dear Zakaria GHACHIM,</span>
           <textarea

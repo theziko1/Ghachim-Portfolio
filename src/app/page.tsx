@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import ModelRenderer from "@/components/avatar-renderer";
 import Link from "next/link";
+import Image from "next/image";
+
 
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
       <div className=" h-full flex flex-col overflow-hidden lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="w-1/2 h-1/3 left-[20%] lg:left-0   lg:h-full relative  lg:top-[20%]">
-        <ModelRenderer />
+        <Image src="/home.svg" alt="home" width={300} height={300} />
         </div>
 
         {/* TEXT CONTAINER */}
@@ -28,6 +30,7 @@ export default function Home() {
             <div className="w-full flex justify-center lg:justify-start gap-4">
                 <Link href="/portfolio" ><button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button></Link>
                 <Link href="/contact" ><button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button></Link>
+                <button className="text-xs p-4 rounded-lg ring-1 ring-black bg-black text-white">Download Resume</button>
             </div>
         </div>
       </div>

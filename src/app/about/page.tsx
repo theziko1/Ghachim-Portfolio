@@ -205,7 +205,7 @@ const About : React.FC = () => {
                   Frontend developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs md:text-sm italic">
                   Digicall partner business specialty:
                   Solid experience in front-end development ( Reactjs - tailwind css - javascript).{" "}
                   </div>
@@ -248,7 +248,7 @@ const About : React.FC = () => {
                     FullStack Developer (MERN stack)
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs md:text-sm italic">
                   Varied Full Stack experience, combining front-end (React js) and back-end skills
                   (Node js - MongoDB) with a specialization in site customization
                    WordPress.{" "}
@@ -272,7 +272,7 @@ const About : React.FC = () => {
                   Managing the database{" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs md:text-sm italic">
                   Specialty on the company Valmeca Morocco for database management
                   handles their stocks.
                    record invoices.{" "}
@@ -317,7 +317,7 @@ const About : React.FC = () => {
                     Software developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs md:text-sm italic">
                   My role in JDI SOFT:
                   computer development.
                   Solutions for touch devices.{" "}

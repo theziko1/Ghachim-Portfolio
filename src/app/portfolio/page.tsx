@@ -75,10 +75,10 @@ const Portfolio : React.FC = () => {
                   <h1 className="text-xl font-bold md:text-2xl lg:text-xl xl:text-4xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[600px] xl:h-[300px]">
+                  <div className="relative w-75 h-56 md:w-96 md:h-64 lg:w-[600px] xl:h-[300px]">
                     <Image src={item.img} alt="" width={250} height={250} />
                   </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-75 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
                   <div className='flex items-center gap-4 lg:justify-between'>
