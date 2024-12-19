@@ -80,16 +80,16 @@ const Navbar: React.FC = () => {
           href="/"
           className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <Image src="/logo.png" alt="logo" width={150} height={150} />
+          <Image src="/Logo.png" alt="logo" width={150} height={150} />
         </Link>
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 flex-1">
         <Link href="https://github.com/theziko1">
-          <Image src="/github.png" alt="" width={24} height={24} />
+          <Image src="/github.png" alt="github" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/zakaria-ghachim-b57231222/">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}

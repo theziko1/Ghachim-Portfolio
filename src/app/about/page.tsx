@@ -34,7 +34,7 @@ const About : React.FC = () => {
             {/* BIOGRAPHY IMAGE */}
             <Image
               src="/profil.jpg"
-              alt=""
+              alt="profil"
               width={112}
               height={112}
               className="w-28 h-28 rounded-full object-cover"
@@ -53,7 +53,7 @@ const About : React.FC = () => {
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              <Image src="/Sign.png" alt="" width={300} height={200} />         
+              <Image src="/Sign.png" alt="sign" width={300} height={200} />         
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
