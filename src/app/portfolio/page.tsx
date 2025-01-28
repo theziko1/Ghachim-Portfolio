@@ -7,7 +7,16 @@ import { useRef } from "react";
 
 const items = [
   {
-    id: 1,
+     id: 1,
+    color: "from-purple-300 to-red-300",
+    title: "Nights-Rest App",
+    desc:"Nights Rest is a web application for hotel reservations that aims to simplify and improve the user experience.",
+    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737712057/Nights-rest_hn7tlx.png",
+    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    link: "https://nights-rest.vercel.app/",
+  },
+  {
+    id: 2,
     color: "from-red-300 to-blue-300",
     title: "React Dashboard",
     desc: "A web application dedicated to a dashboard can be extremely useful in many contexts, whether to track business data, financial analysis, health statistics, or even personal data like fitness goals",
@@ -16,7 +25,7 @@ const items = [
     link: "https://react-dashbord-frontend.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-blue-300 to-violet-300",
     title: "ChatSphere App",
     desc: "This application aims to provide a real-time communication platform allowing users to connect to various chat rooms and share messages instantly.",
@@ -25,7 +34,7 @@ const items = [
     link: "https://chat-sphere-web.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     color: "from-violet-300 to-purple-300",
     title: "Dev Recruit App",
     desc: "DevRecruit is committed to identifying the best developers to join its team. For this, the company seeks to implement a precise and committed technical evaluation to assess the skills of future employees in the field of development.",
@@ -34,7 +43,7 @@ const items = [
     link: "https://dev-recruit.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     color: "from-purple-300 to-red-300",
     title: "AuthFlow Pro App",
     desc: "An Authentication Management Application based on Roles and Permissions in Monorepo with MVC Architecture, Redux, and Data Modeling",

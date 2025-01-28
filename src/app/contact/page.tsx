@@ -80,7 +80,7 @@ const Contact : React.FC = () => {
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
           <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+          <button className="bg-blue-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
           {success && (

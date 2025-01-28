@@ -9,7 +9,9 @@ const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
   { url: "/portfolio", title: "Portfolio" },
+  { url: "/certificate", title: "Certificate" },
   { url: "/contact", title: "Contact" },
+
 ];
 const Navbar: React.FC = () => {
   const [open, setOpen] = React.useState<boolean>(false);
