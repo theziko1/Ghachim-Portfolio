@@ -17,7 +17,7 @@ export default function Home() {
       <div className=" h-full flex flex-col overflow-hidden lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="w-1/2 h-1/3 left-[20%] lg:left-0   lg:h-full relative  lg:top-[20%]">
-        <Image src="/profil.jpg" alt="home" width={300} height={300} />
+        <Image src="/profil.jpg" alt="profil" width={112}  height={112} className="w-28 h-28 rounded-full object-cover"  />
         </div>
 
         {/* TEXT CONTAINER */}
