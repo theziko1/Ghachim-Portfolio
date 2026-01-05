@@ -206,7 +206,7 @@ const About : React.FC = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                 ating multi-channel communication servers for customer engagement, and collaborating with marketing and sales teams to align development with business objectives.{" "}
+                 Responsive WordPress websites were developed using Elementor, with technical issues in hosting, security, and performance resolved. GoHighLevel CRM was configured to automate marketing, and WhatsApp, SMS, and email servers were integrated to boost engagement. Collaboration with marketing and sales teams ensured alignment with business objectives.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
