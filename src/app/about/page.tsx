@@ -202,20 +202,19 @@ const About : React.FC = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Frontend developer
+                  Full Stack Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Digicall partner business specialty:
-                  Solid experience in front-end development ( Reactjs - tailwind css - javascript).{" "}
+                  Expertise includes developing responsive WordPress/Elementor websites and troubleshooting hosting, security, and performance issues. Additional responsibilities involved configuring GoHighLevel CRM for automated marketing, integrating multi-channel communication servers for customer engagement, and collaborating with marketing and sales teams to align development with business objectives.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Aug 2023 - Oct 2023
+                   Sep 2024 - Feb 2025
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Digicall partner
+                  Canaweb
                   </div>
                 </div>
                 {/* CENTER */}
@@ -245,21 +244,19 @@ const About : React.FC = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    FullStack Developer (MERN stack)
+                    WordPress Developer 
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Varied Full Stack experience, combining front-end (React js) and back-end skills
-                  (Node js - MongoDB) with a specialization in site customization
-                   WordPress.{" "}
+                  Built and delivered robust, custom web projects utilizing WordPress and Elementor page builder and focused on creating stable and scalable web solutions tailored to client specifications.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Apr  2023 - July 2023{" "}
+                   Sep  2023 - Dec 2023{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Canaweb
+                  Hub informatique
                   </div>
                 </div>
               </div>
@@ -279,7 +276,7 @@ const About : React.FC = () => {
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Jan  2023 - March 2023 {" "}
+                   Jan  2023 - June 2023 {" "}
                   </div>
                    {/* JOB COMPANY */}
                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
