@@ -206,7 +206,7 @@ const About : React.FC = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Expertise includes developing responsive WordPress/Elementor websites and troubleshooting hosting, security, and performance issues. Additional responsibilities involved configuring GoHighLevel CRM for automated marketing, integrating multi-channel communication servers for customer engagement, and collaborating with marketing and sales teams to align development with business objectives.{" "}
+                 ating multi-channel communication servers for customer engagement, and collaborating with marketing and sales teams to align development with business objectives.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
