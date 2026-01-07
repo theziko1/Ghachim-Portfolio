@@ -10,7 +10,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Wordpress Web Development for Absolute Beginner Zero to Hero",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737975870/ohpjhsmvtmw38walfyjy.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    technologies : ["Wordpress", "Elementor"],
     
   },
   {
@@ -18,7 +18,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Complete Wordpress Website Developer Course",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737977446/zmpzmszlvovlnmrxjgsf.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    technologies : ["Wordpress", "Elementor"],
     
   },
   {
@@ -26,7 +26,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Learn PHP and MySQL for Web Application and Web Development",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737977446/dsnis1anpqzndzkp8yay.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    technologies : ["PHP","MySQL"],
     
   },
   {
@@ -34,7 +34,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Linux Command-Line & Shell Scripting for Absolute Beginners",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737978560/kvdiijitzxznlfux1ymt.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    technologies : ["Linux"],
     
   },
   {
@@ -42,7 +42,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Git and GitHub For Beginners",
     img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737979138/gpmpjgmegkcyglfupsqq.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
+    technologies : ["Git", "GitHub"],
     
   },
 ];
