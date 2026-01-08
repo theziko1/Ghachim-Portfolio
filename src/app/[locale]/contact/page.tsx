@@ -2,11 +2,13 @@
 import React, { MouseEvent, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from 'next-intl';
 
 const Contact : React.FC = () => {
   const [success, setSuccess] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-  const text = "Say Hello";
+  const t = useTranslations("Contact");
+  const text = t("title");
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -67,30 +69,30 @@ const Contact : React.FC = () => {
           ref={form}
           className="w-full md:w-3/4 h-screen mt-4 bg-red-50 rounded-xl text-xl flex flex-col gap-6 m-auto justify-center p-24"
         >
-          <span>Dear Zakaria GHACHIM,</span>
+          <span>{t("salutation")},</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
-          <span>My mail address is:</span>
+          <span>{t("desc-mail")}</span>
           <input
             name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
-          <span>Regards</span>
+          <span>{t("regards")}</span>
           <button className="bg-blue-200 rounded font-semibold text-gray-600 p-4">
-            Send
+            {t("button")}
           </button>
           {success && (
             <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
+              {t("success-msg")}
             </span>
           )}
           {error && (
             <span className="text-red-600 font-semibold">
-              Something went wrong!
+              {t("error-msg")}
             </span>
           )}
         </form>

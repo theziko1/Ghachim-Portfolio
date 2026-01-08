@@ -1,0 +1,76 @@
+{    
+    "Navigation" : {
+        "home" : "Home",
+        "about" : "About",
+        "portfolio" : "Portfolio",
+        "certificate" : "Certificate",
+        "contact" : "Contact"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 Français} other {Unknown}}"
+    },
+    "Home" : {
+        "title": "Welcome to GHACHIM's Portfolio",
+        "description": "Hello and welcome! I'm Zakaria GHACHIM, a passionate full-stack developer with a love for creating meaningful digital experiences. Whether it's crafting elegant front-end interfaces or architecting robust back-end systems, I thrive on turning ideas into reality through code.",
+        "button-1": "View my work",
+        "button-2": "Contact me",
+        "button-3": "Download Resume"
+
+    },
+    "About" : {
+        "title": "BIOGRAPHY",
+        "description": "I am a dedicated full-stack developer with a passion for crafting exceptional digital experiences. With a background in my previous experiences, I bring a wealth of knowledge and expertise to every project. From a young age, I've been fascinated by technology and its potential to transform lives. This fascination led me to pursue a career in web development, where I discovered a love for coding and problem-solving.",
+        "quote": "Make it right.",
+        "skills" : "SKILLS",
+        "experience" : "EXPERIENCE",
+        "job-title-1" : "Frontend developer",
+        "job-description-1" : "Digicall partner business specialt : Solid experience in front-end development ( Reactjs - tailwind css - javascript).",
+        "job-date-1" : "Aug 2023 - Oct 2023",
+
+        "job-title-2" : "FullStack Developer (MERN stack)",
+        "job-description-2" : "Varied Full Stack experience, combining front-end (React js) and back-end skills  (Node js - MongoDB) with a specialization in site customization WordPress.",
+        "job-date-2" : "Apr 2023 - July 2023",
+
+        "job-title-3" : "Managing the database",
+        "job-description-3" : "Specialty on the company Valmeca Morocco for database management handles their stocks.  record invoices.",
+        "job-date-3" : "Jan  2023 - March 2023",
+
+        "job-title-4" : "Software developer",
+        "job-description-4" : "My role in JDI SOFT: computer development. Solutions for touch devices.",
+        "job-date-4" : "Sep 2022 - Dec 2022"
+
+    },
+    "Portfolio" : {
+        "title" : "My Works",
+        "desc-project-1" : "Nights Rest is a web application for hotel reservations that aims to simplify and improve the user experience.",
+        "desc-project-2" : "A web application dedicated to a dashboard can be extremely useful in many contexts, whether to track business data, financial analysis, health statistics, or even personal data like fitness goals",
+        "desc-project-3" : "This application aims to provide a real-time communication platform allowing users to connect to various chat rooms and share messages instantly.",
+        "desc-project-4" : "DevRecruit is committed to identifying the best developers to join its team. For this, the company seeks to implement a precise and committed technical evaluation to assess the skills of future employees in the field of development.",
+        "desc-project-5" : "An Authentication Management Application based on Roles and Permissions in Monorepo with MVC Architecture, Redux, and Data Modeling",
+        "see-more" : "See more",
+        "title-2" : "Do you have a project?",
+        "text-path" : "Full Stack Developer| MERN Stack Dev|",
+        "button" : "Hire Me"
+
+    },
+    "Certificate" : {
+        "title" : "My Certificate",
+        "cert-1" : "Wordpress Web Development for Absolute Beginner Zero to Hero",
+        "cert-2" : "Complete Wordpress Website Developer Course",
+        "cert-3" : "Learn PHP and MySQL for Web Application and Web Development",
+        "cert-4" : "Linux Command-Line & Shell Scripting for Absolute Beginners",
+        "cert-5" : "Git and GitHub For Beginners"
+    },
+    "Contact" : {
+        "title" : "Say Hello!",
+        "salutation" : "Dear Zakaria GHACHIM",
+        "desc-mail" : "Mon adresse courriel est :",
+        "regards" : "Regards",
+        "button" : "Send",
+        "success-msg" : "Your message has been sent successfully!",
+        "error-msg" : "Something went wrong!"
+
+
+    }
+}

@@ -4,56 +4,61 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { useTranslations } from 'next-intl';
 
-const items = [
-  {
-     id: 1,
-    color: "from-purple-300 to-red-300",
-    title: "Nights-Rest App",
-    desc:"Nights Rest is a web application for hotel reservations that aims to simplify and improve the user experience.",
-    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737712057/Nights-rest_hn7tlx.png",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
-    link: "https://nights-rest.vercel.app/",
-  },
-  {
-    id: 2,
-    color: "from-red-300 to-blue-300",
-    title: "React Dashboard",
-    desc: "A web application dedicated to a dashboard can be extremely useful in many contexts, whether to track business data, financial analysis, health statistics, or even personal data like fitness goals",
-    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714747167/s9lrfeg7x5ttjpertgo7.jpg",
-    technologies : ["MongoDB", "Express", "React", "NodeJS"],
-    link: "https://react-dashbord-frontend.onrender.com/",
-  },
-  {
-    id: 3,
-    color: "from-blue-300 to-violet-300",
-    title: "ChatSphere App",
-    desc: "This application aims to provide a real-time communication platform allowing users to connect to various chat rooms and share messages instantly.",
-    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714746708/qeuyrnbeazfrjmjbvsui.png",
-    technologies : ["MongoDB", "Express", "React", "NodeJS" , "Socket.io","Typescript"],
-    link: "https://chat-sphere-web.vercel.app/",
-  },
-  {
-    id: 4,
-    color: "from-violet-300 to-purple-300",
-    title: "Dev Recruit App",
-    desc: "DevRecruit is committed to identifying the best developers to join its team. For this, the company seeks to implement a precise and committed technical evaluation to assess the skills of future employees in the field of development.",
-    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714748756/a6a9ouqmjpzyrqlzbry8.png",
-    technologies : ["Json server", "React","Javascript","TailwindCSS"],
-    link: "https://dev-recruit.vercel.app/",
-  },
-  {
-    id: 5,
-    color: "from-purple-300 to-red-300",
-    title: "AuthFlow Pro App",
-    desc: "An Authentication Management Application based on Roles and Permissions in Monorepo with MVC Architecture, Redux, and Data Modeling",
-    img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714750496/nnu4t86fwbv0vhc8grru.png",
-    technologies : ["MongoDB", "Express", "React", "NodeJS", "Typescript"],
-    link: "https://auth-flow-pro-client.vercel.app/",
-  },
-];
+
 
 const Portfolio : React.FC = () => {
+  const t = useTranslations("Portfolio");
+
+
+  const items = [
+    {
+       id: 1,
+      color: "from-purple-300 to-red-300",
+      title: "Nights-Rest App",
+      desc: t("desc-project-1"),
+      img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1737712057/Nights-rest_hn7tlx.png",
+      technologies : ["MongoDB", "Express", "React", "NodeJS"],
+      link: "https://nights-rest.vercel.app/",
+    },
+    {
+      id: 2,
+      color: "from-red-300 to-blue-300",
+      title: "React Dashboard",
+      desc: t("desc-project-2"),
+      img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714747167/s9lrfeg7x5ttjpertgo7.jpg",
+      technologies : ["MongoDB", "Express", "React", "NodeJS"],
+      link: "https://react-dashbord-frontend.onrender.com/",
+    },
+    {
+      id: 3,
+      color: "from-blue-300 to-violet-300",
+      title: "ChatSphere App",
+      desc: t("desc-project-3"),
+      img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714746708/qeuyrnbeazfrjmjbvsui.png",
+      technologies : ["MongoDB", "Express", "React", "NodeJS" , "Socket.io","Typescript"],
+      link: "https://chat-sphere-web.vercel.app/",
+    },
+    {
+      id: 4,
+      color: "from-violet-300 to-purple-300",
+      title: "Dev Recruit App",
+      desc: t("desc-project-4"),
+      img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714748756/a6a9ouqmjpzyrqlzbry8.png",
+      technologies : ["Json server", "React","Javascript","TailwindCSS"],
+      link: "https://dev-recruit.vercel.app/",
+    },
+    {
+      id: 5,
+      color: "from-purple-300 to-red-300",
+      title: "AuthFlow Pro App",
+      desc: t("desc-project-5"),
+      img: "https://res.cloudinary.com/dpklloyz5/image/upload/v1714750496/nnu4t86fwbv0vhc8grru.png",
+      technologies : ["MongoDB", "Express", "React", "NodeJS", "Typescript"],
+      link: "https://auth-flow-pro-client.vercel.app/",
+    },
+  ];
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -70,7 +75,7 @@ const Portfolio : React.FC = () => {
     >
        <div className="h-[600vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-          My Works
+          {t("title")}
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
@@ -96,7 +101,7 @@ const Portfolio : React.FC = () => {
                   <span key={item} className="rounded m-2 p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{item}</span>
                 ))}</div>
                 <Link href={item.link} >
-                    <button className="p-4 text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-4 text-lg bg-white text-gray-600 font-semibold m-4 rounded">{t("see-more")}</button>
                   </Link>
               </div>
                   
@@ -107,7 +112,7 @@ const Portfolio : React.FC = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-6xl mt-48">Do you have a project?</h1>
+        <h1 className="text-6xl mt-48">{t("title-2")}</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -123,7 +128,7 @@ const Portfolio : React.FC = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Full Stack Developer| MERN Stack Dev|
+                {t("text-path")}
               </textPath>
             </text>
           </motion.svg>
@@ -131,7 +136,7 @@ const Portfolio : React.FC = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Hire Me
+            {t("button")}
           </Link>
         </div>
       </div>

@@ -1,0 +1,71 @@
+{
+    "Navigation" : {
+        "home" : "Accueil",
+        "about" : "À propos",
+        "portfolio" : "Portfolio",
+        "certificate" : "Certificat",
+        "contact" : "Contact"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪  Deutsch} en {🇺🇸 English} fr {🇫🇷 Français} other {Unknown}}"
+    },
+    "Home" : {
+        "title": "Bienvenue au Portfolio de GHACHIM",
+        "description": "Bonjour et bienvenue ! Je suis Zakaria GHACHIM, une passionnée de développement full-stack qui aime créer des expériences numériques significatives. Que ce soit pour créer des interfaces frontales élégantes ou pour concevoir des systèmes de back-end robustes, je suis passionné par la transformation d’idées en réalité à travers le code.",
+        "button-1": "Voir mon travail",
+        "button-2": "Contactez-moi",
+        "button-3": "Télécharger le CV"
+    },
+    "About" : {
+        "title": "BIOGRAPHIE",
+        "description": "Je suis un développeur complet et dévoué, passionné par la création d’expériences numériques exceptionnelles. Ayant une expérience de mes expériences antérieures, j’apporte une richesse de connaissances et d’expertise à chaque projet. Depuis mon plus jeune âge, je suis fascinée par la technologie et son potentiel de transformer des vies. Cette fascination m’a conduit à poursuivre une carrière dans le développement web, où j’ai découvert un amour pour le codage et la résolution de problèmes.",
+        "quote": "Faire bien.",
+        "skills" : "COMPÉTENCES",
+        "experience" : "EXPÉRIENCE",
+        "job-title-1" : "Développeur Frontend",
+        "job-description-1" : "Spécialité de l’entreprise partenaire Digicall : Solide expérience du développement front-end (Reactjs - tailwind css - javascript).",
+        "job-date-1" : "Août 2023 – Oct 2023",
+
+        "job-title-2" : "Développeur FullStack (pile MERN)",
+        "job-description-2" : "Expérience variée Full Stack, combinant des compétences front-end (React js) et back-end (Node js - MongoDB) avec une spécialisation en personnalisation de site WordPress.",
+        "job-date-2" : "Avr 2023 - jui 2023",
+
+        "job-title-3" : "Gestion de la base de données",
+        "job-description-3" : "Spécialité de l’entreprise Valmeca Maroc pour la gestion de base de données gère leurs stocks. Enregistrer les factures.",
+        "job-date-3" : "Jan 2023 – Mars 2023",
+
+        "job-title-4" : "Développeur de logiciels",
+        "job-description-4" : "Mon rôle chez JDI SOFT : développement informatique. Solutions pour les appareils tactiles.",
+        "job-date-4" : "Sep 2022 – Déc 2022"
+    },
+    "Portfolio" : {
+        "title" : "Mes Travaux",
+        "desc-project-1" : "Nights Rest est une application web de réservation d’hôtel qui vise à simplifier et à améliorer l’expérience utilisateur.",
+        "desc-project-2" : "Une application web dédiée à un tableau de bord peut être extrêmement utile dans de nombreux contextes, que ce soit pour suivre les données commerciales, l’analyse financière, les statistiques de santé ou même des données personnelles comme les objectifs de remise en forme.",
+        "desc-project-3" : "Cette application vise à fournir une plateforme de communication en temps réel permettant aux utilisateurs de se connecter à divers salons de discussion et de partager des messages instantanément.",
+        "desc-project-4" : "DevRecruit s’engage à identifier les meilleurs développeurs pour rejoindre son équipe. Pour ce faire, l’entreprise cherche à mettre en œuvre une évaluation technique précise et engagée pour évaluer les compétences des futurs employés dans le domaine du développement.",
+        "desc-project-5" : "Une application de gestion de l’authentification basée sur les rôles et les autorisations dans Monorepo avec une architecture MVC, Redux et de modélisation de données",
+        "see-more" : "Voir plus",
+        "title-2" : "Vous avez un projet ?",
+        "text-path" : "Développeur Full Stack| Développeur MERN Stack|",
+        "button" : "Embaucher moi"
+    },
+    "Certificate" : {
+        "title" : "Mon Certificat",
+        "cert-1" : "Wordpress Développement Web pour Absolute Beginner Zero to Hero",
+        "cert-2" : "Cours complet de développeur de site Web Wordpress",
+        "cert-3" : "Apprenez PHP et MySQL pour le développement d’applications web",
+        "cert-4" : "Linux Command-Line & Shell Scripting pour les débutants",
+        "cert-5" : "Git et GitHub pour les débutants"
+    },
+    "Contact" : {
+        "title" : "Dites bonjour",
+        "salutation" : "Cher Zakaria GHACHIM",
+        "desc-mail" : "Mon adresse courriel est :",
+        "regards" : "Salutations",
+        "button" : "Envoyer",
+        "success-msg" : "Votre message a été envoyé avec succès !",
+        "error-msg" : "Quelque chose s’est mal passé!"
+    }
+}

@@ -1,21 +1,26 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import React from "react";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
-const links = [
-  { url: "/", title: "Home" },
-  { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
-  { url: "/certificate", title: "Certificate" },
-  { url: "/contact", title: "Contact" },
 
-];
+
 const Navbar: React.FC = () => {
   const [open, setOpen] = React.useState<boolean>(false);
+  const t = useTranslations("Navigation");
+  
+  const links = [
+    { url: "/", title: t("home") },
+    { url: "/about", title: t("about") },
+    { url: "/portfolio", title: t("portfolio") },
+    { url: "/certificate", title: t("certificate") },
+    { url: "/contact", title: t("contact") },
 
+  ];
   const topVariants = {
     closed: {
       rotate: 0,
@@ -71,7 +76,7 @@ const Navbar: React.FC = () => {
   return (
     <div className=" h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
-      <div className="hidden md:flex gap-4 flex-1">
+      <div className="hidden md:flex gap-4">
         {links.map((link) => (
           <NavLink link={link} key={link.url} />
         ))}
@@ -80,22 +85,27 @@ const Navbar: React.FC = () => {
       <div className="md:hidden lg:flex xl:flex-1 xl:justify-center">
         <Link
           href="/"
-          className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm rounded-md p-1 font-semibold flex items-center justify-center"
         >
           <Image src="/Logo.png" alt="logo" width={150} height={150} />
         </Link>
       </div>
       {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 flex-1">
+      <div className="hidden md:flex gap-4 justify-center items-center flex-1">
         <Link href="https://github.com/theziko1">
           <Image src="/github.png" alt="github" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/zakaria-ghachim-b57231222/">
           <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
         </Link>
+         <div className="flex w-12 h-12 ">
+          <LocaleSwitcher />
+        </div>
       </div>
+      
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
+        
         {/*  MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
@@ -125,8 +135,8 @@ const Navbar: React.FC = () => {
               <motion.div variants={listItemVariants} key={link.title}>
                 <NavLink link={link} key={link.url}/>
               </motion.div>
-            ))}
-          </motion.div>
+            ))} 
+          </motion.div>           
         )}
       </div>
     </div>

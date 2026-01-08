@@ -3,10 +3,11 @@ import Image from 'next/image';
 import React, { useRef } from 'react';
 import { motion  , useScroll, useInView} from "framer-motion";
 import Brain from '@/components/Brain';
+import { useTranslations } from 'next-intl';
 
 
 const About : React.FC = () => {
-
+  const t = useTranslations("About");
   const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress }  = useScroll({ container: containerRef });
@@ -40,16 +41,14 @@ const About : React.FC = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">{t("title")}</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            I am a dedicated full-stack developer with a passion for crafting exceptional digital experiences. With a background in my previous experiences, I bring a wealth of knowledge and expertise to every project.
-            
-            From a young age, I&apos;ve been fascinated by technology and its potential to transform lives. This fascination led me to pursue a career in web development, where I discovered a love for coding and problem-solving.
+              {t("description")}
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Make it right.
+              {t("quote")}
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
@@ -88,7 +87,7 @@ const About : React.FC = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              SKILLS
+              {t("skills")}
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
@@ -151,6 +150,15 @@ const About : React.FC = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
               </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Wordpress
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                PHP
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                MYSQL
+              </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -188,7 +196,7 @@ const About : React.FC = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              EXPERIENCE
+              {t("experience")}
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
@@ -202,16 +210,15 @@ const About : React.FC = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Frontend developer
+                  {t("job-title-1")}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Digicall partner business specialty:
-                  Solid experience in front-end development ( Reactjs - tailwind css - javascript).{" "}
+                  {t("job-description-1")}{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Aug 2023 - Oct 2023
+                  {t("job-date-1")}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -245,17 +252,15 @@ const About : React.FC = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    FullStack Developer (MERN stack)
+                    {t("job-title-2")}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Varied Full Stack experience, combining front-end (React js) and back-end skills
-                  (Node js - MongoDB) with a specialization in site customization
-                   WordPress.{" "}
+                  {t("job-description-2")}{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Apr  2023 - July 2023{" "}
+                  {t("job-date-2")}{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -269,17 +274,15 @@ const About : React.FC = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Managing the database{" "}
+                   {t("job-title-3")}{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  Specialty on the company Valmeca Morocco for database management
-                  handles their stocks.
-                   record invoices.{" "}
+                   {t("job-description-3")}{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                   Jan  2023 - March 2023 {" "}
+                   {t("job-date-3")} {" "}
                   </div>
                    {/* JOB COMPANY */}
                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -313,18 +316,16 @@ const About : React.FC = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Software developer
+                  <div className="bg-white p-3 mt-4 font-semibold rounded-b-lg rounded-s-lg">
+                  {t("job-title-4")}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs md:text-sm italic">
-                  My role in JDI SOFT:
-                  computer development.
-                  Solutions for touch devices.{" "}
+                  {t("job-description-4")}{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-blue-900 text-sm font-semibold">
-                  Sep 2022 - Dec 2022{" "}
+                  {t("job-date-4")}{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">

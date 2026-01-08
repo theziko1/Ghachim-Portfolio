@@ -1,6 +1,6 @@
 "use client"
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import {Link} from '@/i18n/routing';
+import { usePathname } from '@/i18n/routing';
 import React from 'react'
 
 interface NavLinkProps {
@@ -10,7 +10,7 @@ interface NavLinkProps {
 const NavLink : React.FC<NavLinkProps> = ({link }) => {
     const pathname = usePathname()
   return (
-    <Link className={`rounded p-1 ${pathname === link.url && "bg-black text-white"}`} href={link.url}>{link.title}</Link>
+    <Link className={` rounded p-1 ${pathname === link.url && "bg-black text-white"}`} href={link.url}>{link.title}</Link>
   )
 }
     
