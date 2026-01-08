@@ -222,7 +222,7 @@ const About : React.FC = () => {
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Digicall partner
+                  Canaweb
                   </div>
                 </div>
                 {/* CENTER */}
@@ -264,7 +264,7 @@ const About : React.FC = () => {
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Canaweb
+                  Hub informatique
                   </div>
                 </div>
               </div>
