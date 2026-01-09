@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations("Home");
   return (
+    <>
     <motion.div
       className="h-full"
       initial={{ y: "-200vh" }}
@@ -38,6 +39,6 @@ export default function Home() {
        
       </div>
       </motion.div>
-
+      </>
   );
 }

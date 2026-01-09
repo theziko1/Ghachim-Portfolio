@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
+    <>
     <motion.div
       className="h-full"
       initial={{ y: "-200vh" }}
@@ -35,6 +36,6 @@ export default function Home() {
         </div>
       </div>
       </motion.div>
-
+      </>
   );
 }
